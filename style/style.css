@@ -36,7 +36,7 @@ form {
     gap: 8px;
     margin-bottom: 42px;
 
-    input {
+    .input {
         all: unset;
         box-sizing: border-box;
         max-width: 321px;
@@ -90,6 +90,7 @@ form {
     border: 1px solid var(--main-blue);
     border-radius: var(--basic-radius);
 
+
     h3 {
         font-family: Gilroy;
         font-weight: 600;
@@ -114,4 +115,92 @@ form {
         all: unset;
         cursor: pointer;
     }
+}
+
+
+dialog {
+    all: unset;
+    display: none;
+    border: none;
+    width: 420px;
+    max-width: 90%;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    inset-inline-start: 0px;
+    inset-inline-end: 0px;
+    margin-bottom: 100px;
+    margin: auto;
+
+
+    .form {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form input[type="text"] {
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 35px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form input[type="checkbox"] {
+        cursor: pointer;
+        text-align: left;
+        width: 20px;
+        height: 20px;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .btns button {
+        width: 150px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .btns .save {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .btns .save:hover {
+        background-color: #45a049;
+    }
+
+    .checkbox {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+dialog[open] {
+    display: block;
+}
+
+dialog[close] {
+    display: block;
 }

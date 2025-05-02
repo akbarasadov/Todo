@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
 
-   
+
 
     <div class="container">
         <h1>Todo List</h1>
         <form name="add">
-            <input class="input" type="text" placeholder="Todo:" required>
+            <input type="text" name="title" placeholder="todo:" class="input">
             <button>Add</button>
         </form>
         <div class="grid">
-            
+
         </div>
     </div>
-    
+
+    <dialog>
+        <form class="form">
+            <input class="newTitle" type="text" placeholder="Введите новое имя.">
+            <div class="checkbox">
+                <input class="input_checkbox" type="checkbox">Вы действительно хотите это изменить?
+            </div>
+
+            <div class="btns">
+                <button class="close">Закрыть</button>
+                <button class="save">Сохранить</button>
+            </div>
+        </form>
+    </dialog>
+
 
     <script type="module" src="./app.js"></script>
 </body>
+
 </html>
